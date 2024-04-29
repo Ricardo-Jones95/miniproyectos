@@ -17,7 +17,7 @@ img {
     border: solid 3px #424242;
     max-width: 550px;
     max-height: 700px;
-    animation: blurAnimacion 3.5s ease-in-out;
+    animation: blurAnimacion 3.5s ease-in;
 }
 
 .marco {
