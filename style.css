@@ -1,0 +1,68 @@
+@keyframes blurAnimacion {
+    100% {
+        filter: blur(0px);
+    }
+    0% {
+        filter: blur(5px);
+    }
+}   
+
+img {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit:fill;
+    height: 600px;
+    width: 550px;
+    border: solid 3px #424242;
+    max-width: 550px;
+    max-height: 700px;
+    animation: blurAnimacion 3.5s ease-in-out;
+}
+
+.marco {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 18%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 35px 37px 140px 35px;
+    background-color: rgb(248, 220, 182);
+    width: 550px;
+    border: 3px solid #272727;
+    border-radius: 12px;
+    box-shadow: 0px 0px 35px 4px black;
+}
+
+body {
+    margin: 0;
+    margin-top: 5%;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display:block;
+}
+
+button {
+    background-color: blueviolet;
+    border: transparent;
+}
+
+h2 {
+    display: block;
+    justify-content: right;
+    align-items:center;
+    text-align: center;
+    margin: auto;
+    font-size: 70px;
+    font-family: 'Dancing script';
+    color: bisque;
+    transform: rotate(-10deg);
+    text-shadow: 4px 8px 5px black;
+    
+}
