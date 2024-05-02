@@ -2,9 +2,6 @@
     100% {
         filter: blur(0px);
     }
-    25% {
-        filter: blur(8px);
-    }
     0% {
         filter: blur(16px);
     }
