@@ -60,7 +60,7 @@ function boton() {
         ME.innerHTML = "Hermosa <br> Me encantas..!"
         img.style.animation = 'none';
         img.offsetHeight;
-        img.style.animation = 'blurAnimacion 3s ease-in'
+        img.style.animation = 'blurAnimacion 2s ease-in'
 }
 
 
