@@ -42,7 +42,7 @@ const imagenes = [
 const img = document.querySelector("img");
 const ME = document.querySelector("h2");
 let imgSiguiente = "";
-let indice = 0;
+let i = 0;
 
 function boton() {
     img.src = imagenes[0]
@@ -57,8 +57,8 @@ function boton() {
 }
 
 function botonImagen() {
-    indice = (indice + 1) % imagenes.length;
-    const imagenActual = imagenes[indice]
+    i = (indice + 1) % imagenes.length;
+    const imagenActual = imagenes[]
     img.src = imagenActual 
     img.style.animation = 'none'; //eliminamos la animacion para que aparezca cada vez que cargamos la imagen
     img.offsetHeight;// esto hace que la eliminacion de la animacion sea inmediata
