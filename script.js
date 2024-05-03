@@ -57,8 +57,8 @@ function boton() {
 }
 
 function botonImagen() {
-    i = (indice + 1) % imagenes.length;
-    const imagenActual = imagenes[]
+    i = (i + 1) % imagenes.length;
+    const imagenActual = imagenes[i]
     img.src = imagenActual 
     img.style.animation = 'none'; //eliminamos la animacion para que aparezca cada vez que cargamos la imagen
     img.offsetHeight;// esto hace que la eliminacion de la animacion sea inmediata
