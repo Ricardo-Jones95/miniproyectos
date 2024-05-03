@@ -41,6 +41,8 @@ const imagenes = [
 
 const img = document.querySelector("img");
 const ME = document.querySelector("h2");
+const cora = document.querySelector(".corazon")
+const marco = document.querySelector(".marco")
 let imgSiguiente = "";
 let indice = 0;
 
@@ -54,6 +56,7 @@ function boton() {
     const estilo = document.querySelector("link");
     estilo.href = "style.css";
     ME.innerHTML = "Hermosa <br> Me encantas..!";
+    cora.innerHTML = "Te Amo&#x2665&#x2665"
 }
 
 function botonImagen() {
@@ -62,8 +65,14 @@ function botonImagen() {
     img.src = imagenActual 
     img.style.animation = 'none'; //eliminamos la animacion para que aparezca cada vez que cargamos la imagen
     img.offsetHeight;// esto hace que la eliminacion de la animacion sea inmediata
+    cora.style.animation = 'none';
+    cora.offsetHeight;
+    marco.style.animation = 'none';
+    marco.offsetHeight;
     img.onload = () => { //llamamos una funcion onload, que hace que la funcion se ejecute cuando ya a cargado el objeto 
-    img.style.animation = 'blurAnimacion 1.5s ease-in';// volvemos a declarar la animacion dentro de la funcion on load
+    img.style.animation = 'desvanecer 0.9s, blurAnimacion 1.1s ease-in';// volvemos a declarar la animacion dentro de la funcion on load
+    cora.style.animation = 'desvanecer 0.4s, blurAnimacion 0-4s ease-in';
+    marco.style.animation = 'desvanecer 3s';
     };
 }
 
