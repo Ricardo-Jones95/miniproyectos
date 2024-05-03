@@ -62,7 +62,7 @@ function botonImagen() {
     img.src = imagenActual 
     img.style.animation = 'none'; //eliminamos la animacion para que aparezca cada vez que cargamos la imagen
     img.offsetHeight;// esto hace que la eliminacion de la animacion sea inmediata
-    img.onload = () => { //llamamos una funcion onload, que hace que la funcion se ejecute cuando ya a cargado el objeto 
+    img.onload = () => { //llamamos una funcion onload, que hace que la funcion se ejecute cuando ya a cargado el elemento 
     img.style.animation = 'blurAnimacion 1.5s ease-in';// volvemos a declarar la animacion dentro de la funcion on load
     };
 }
