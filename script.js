@@ -45,23 +45,22 @@ let imgSiguiente = "";
 let indice = -1;
 
 function boton() {
-        indice = (indice + 1) % imagenes.length;
-        const imagenActual = imagenes[indice]
-    
-    img.src = imagenActual 
-    
     //const imagenAleatoria = Math.floor(Math.random() * imagenes.length);
-        //img.src = imagenes[imagenAleatoria];
-        const quitarBoton = document.querySelector("button");
-        quitarBoton.onclick = "n";
-        quitarBoton.innerHTML = "";
-        const estilo = document.querySelector("link");
-        estilo.href = "style.css"
-        ME.innerHTML = "Hermosa <br> Me encantas..!"
-        img.style.animation = 'none';
-        img.offsetHeight;
-        img.style.animation = 'blurAnimacion 1s ease-in-out'
+    //img.src = imagenes[imagenAleatoria];
+    const quitarBoton = document.querySelector("button");
+    quitarBoton.onclick = "";
+    quitarBoton.innerHTML = "";
+    const estilo = document.querySelector("link");
+    estilo.href = "style.css"
+    ME.innerHTML = "Hermosa <br> Me encantas..!"
 }
 
-
+function botonImagen() {
+    indice = (indice + 1) % imagenes.length;
+    const imagenActual = imagenes[indice]
+    img.src = imagenActual 
+    img.style.animation = 'none';
+    img.offsetHeight;
+    img.style.animation = 'blurAnimacion 2s ease-in'
+}
 
