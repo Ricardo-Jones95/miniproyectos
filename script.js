@@ -42,9 +42,10 @@ const imagenes = [
 const img = document.querySelector("img");
 const ME = document.querySelector("h2");
 let imgSiguiente = "";
-let indice = -1;
+let indice = 0;
 
 function boton() {
+    img.src = imagenes[0]
     //const imagenAleatoria = Math.floor(Math.random() * imagenes.length);
     //img.src = imagenes[imagenAleatoria];
     const quitarBoton = document.querySelector("button");
@@ -59,8 +60,10 @@ function botonImagen() {
     indice = (indice + 1) % imagenes.length;
     const imagenActual = imagenes[indice]
     img.src = imagenActual 
-    img.style.animation = 'none';
-    img.offsetHeight;
-    img.style.animation = 'blurAnimacion 2s ease-in'
+    img.style.animation = 'none'; //eliminamos la animacion para que aparezca cada vez que cargamos la imagen
+    img.offsetHeight;// esto hace que la eliminacion de la animacion sea inmediata
+    img.onload = () => { //llamamos una funcion onload, que hace que la funcion se ejecute cuando ya a cargado el objeto 
+    img.style.animation = 'blurAnimacion 1.5s ease-in';// volvemos a declarar la animacion dentro de la funcion on load
+    };
 }
 
