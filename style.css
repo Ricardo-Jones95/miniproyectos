@@ -7,18 +7,28 @@
     }
 }   
 
+@keyframes desvanecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 30;
+    }
+}
+
+
+
 img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    object-fit:fill;
+    object-fit: fill;
     height: 600px;
     width: 550px;
     border: solid 3px #424242;
     max-width: 550px;
     max-height: 700px;
-    animation: blurAnimacion 2s ease-in;
-    animation: blurAnimacion 2s ease-in;
+    animation: desvanecer 3s, blurAnimacion 2s ease-in;
 }
 
 .marco {
