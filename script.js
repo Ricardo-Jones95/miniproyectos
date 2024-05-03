@@ -51,16 +51,16 @@ function boton() {
     quitarBoton.onclick = "";
     quitarBoton.innerHTML = "";
     const estilo = document.querySelector("link");
-    estilo.href = "style.css"
-    ME.innerHTML = "Hermosa <br> Me encantas..!"
+    estilo.href = "style.css";
+    ME.innerHTML = "Hermosa <br> Me encantas..!";
 }
 
 function botonImagen() {
     indice = (indice + 1) % imagenes.length;
-    const imagenActual = imagenes[indice]
-    img.src = imagenActual 
+    const imagenActual = imagenes[indice];
+    img.src = imagenActual;
     img.style.animation = 'none';
     img.offsetHeight;
-    img.style.animation = 'blurAnimacion 2s ease-in'
+    img.style.animation = 'blurAnimacion 2s ease-in';
 }
 
