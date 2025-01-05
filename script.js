@@ -55,7 +55,7 @@ function boton() {
     quitarBoton.innerHTML = "";
     const estilo = document.querySelector("link");
     estilo.href = "style.css";
-    ME.innerHTML = "Hermosa <br> Me encantas..!";
+    ME.innerHTML = "Hermosa <br> Me encantas.!";
     cora.innerHTML = "Te Amo..."
 }
 

@@ -78,7 +78,7 @@ h2 {
     color: bisque;
     transform: rotate(-10deg);
     text-shadow: 5px 8px 5px black;
-    
+    line-height: 0.9em;
 }
 
 .corazon {
