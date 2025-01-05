@@ -56,9 +56,9 @@ function boton() {
     const estilo = document.querySelector("link");
     estilo.href = "style.css";
     ME.innerHTML = "Hermosa <br> Me encantas.!";
-    cora.innerHTML = "Te Amo..."
+    cora.innerHTML = "Te Amo...";
     
-}
+};
 
 function botonImagen() {
     indice = (indice + 1) % imagenes.length;
