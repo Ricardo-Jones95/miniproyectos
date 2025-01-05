@@ -55,10 +55,9 @@ function boton() {
     quitarBoton.innerHTML = "";
     const estilo = document.querySelector("link");
     estilo.href = "style.css";
-    estilo.onload = () => {
-        ME.innerHTML = "Hermosa <br> Me encantas.!";
-        cora.innerHTML = "Te Amo..."
-        }
+    ME.innerHTML = "Hermosa <br> Me encantas.!";
+    cora.innerHTML = "Te Amo..."
+    
 }
 
 function botonImagen() {
