@@ -38,7 +38,6 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 18%;
     margin: auto;
     margin-top: 10%;
     margin-bottom: -10px;
@@ -53,12 +52,13 @@ img {
 
 body {
     margin: 0;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     background-color: blueviolet;
     justify-content: center;
     align-items: center;
     text-align: center;
     display:block;
+    
 }
 
 button {
@@ -72,6 +72,7 @@ h2 {
     align-items:center;
     text-align: center;
     margin: auto;
+    margin-top: 5%;
     font-size: 70px;
     font-family: 'Dancing script';
     color: bisque;
